@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Halo Map Porter</title>
+<meta name="description" content="Halo Map Porter converts Halo: Combat Evolved maps between the Master Chief Collection, Halo Custom Edition and the original Xbox, in any direction.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="mark" aria-hidden="true"></span>Halo CE on the Xbox</a>
+    <nav class="nav" aria-label="Pages">
+      <a href="index.html">Home</a>
+      <a href="halo-map-porter.html" aria-current="page">Halo Map Porter</a>
+      <a href="halo-1-unlimited.html">Halo 1 Unlimited</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <span class="eyebrow">Windows app</span>
+    <h1>Halo Map Porter</h1>
+    <p class="lead">Converts Halo: Combat Evolved maps between the <strong>Master Chief Collection</strong>,
+      <strong>Halo Custom Edition</strong> and the <strong>original Xbox</strong>, in any direction. It can also build
+      one map for all three games straight from your H1A-EK tags while you're still working on it.</p>
+    <div class="btns">
+      <a class="btn primary" href="https://github.com/AnthonyChester3D/halo-map-porter/releases/latest">Download the latest release</a>
+      <a class="btn" href="https://github.com/AnthonyChester3D/halo-map-porter/blob/main/README.txt">Read the manual</a>
+      <a class="btn" href="https://github.com/AnthonyChester3D/halo-map-porter">Source code</a>
+    </div>
+    <figure class="hero-shot">
+      <img src="assets/img/porter.png" alt="Halo Map Porter's window, on its Xbox tab">
+    </figure>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <h2>What it takes care of</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Any direction</h3>
+          <p>MCC to Custom Edition, Custom Edition to the Xbox, the Xbox back to the PC, and every other pair.
+            It reads the map, rebuilds it for the target game and fixes what that game can't take.</p>
+        </div>
+        <div class="card">
+          <h3>Made for the Xbox</h3>
+          <p>It swaps the map's copies of stock weapons, vehicles and the player for the Xbox originals, and
+            converts Gearbox models, HUDs and sounds. It also flattens shaders the Xbox can't draw, and gives
+            PC-only weapons Xbox stand-ins or keeps them.</p>
+        </div>
+        <div class="card">
+          <h3>Fits the console</h3>
+          <p>It keeps maps within the Xbox's 47 MB file size, its 22 MB of tag memory and a texture memory
+            target (22, 20 or 18 MB). It shrinks your own textures as far as it needs to, and never touches the
+            stock ones.</p>
+        </div>
+        <div class="card">
+          <h3>Weapons &amp; vehicles</h3>
+          <p>See what every weapon and vehicle costs in tag memory and file size. Replace or drop them before
+            you build.</p>
+        </div>
+        <div class="card">
+          <h3>Map folders and packs</h3>
+          <p>Builds maps as folders for the Halo Universal and Halo 1 Unlimited XBEs. Each folder can have a
+            preview picture, a description, player counts, gametypes and genres. Packs can have an order and
+            series pictures too.</p>
+        </div>
+        <div class="card">
+          <h3>Fixes on its own</h3>
+          <p>It repairs broken tag values and recovers scripts that call functions the target game doesn't
+            have. It reports every change it made, so you know what's different from the original.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap grid two">
+      <div>
+        <h2>Getting started</h2>
+        <ol class="steps">
+          <li>Download <code>HaloMapPorter.exe</code> from the <a href="https://github.com/AnthonyChester3D/halo-map-porter/releases/latest">latest release</a>. There's nothing to install.</li>
+          <li>Run it. The first time, it opens on the Settings tab: point it at your Custom Edition folder, your MCC
+            maps folder and, for Xbox output, an Xbox tagset such as
+            <a href="https://github.com/Aerocatia/haloxbox-revised">haloxbox-revised</a>.</li>
+          <li>Click <em>Download Invader</em> and the app fetches the map compiler it uses.</li>
+          <li>On the <em>Convert a map</em> tab, pick the map and the game to convert it to, then click <em>Convert</em>. (The game it's from is detected.)</li>
+          <li>For the Xbox, copy the output folder into <code>maps\</code> on the console.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>What you need</h2>
+        <ul class="ticks">
+          <li>Windows 10 or 11</li>
+          <li>Halo Custom Edition, for Custom Edition output</li>
+          <li>Halo: The Master Chief Collection, for MCC output</li>
+          <li>An Xbox tagset or your own dumped Xbox maps, for Xbox output</li>
+          <li>The MCC mod tools (H1A-EK), only for building from your tags</li>
+        </ul>
+        <p class="note">The full manual covers every option and the troubleshooting messages. It's
+          <a href="https://github.com/AnthonyChester3D/halo-map-porter/blob/main/README.txt">README.txt</a> in the
+          repository and in each download.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Ported maps on the Xbox</h2>
+      <div class="shots">
+        <figure><img src="assets/img/death-island.jpg" alt="Death Island running on the Xbox" loading="lazy"><figcaption>Death Island, ported from Custom Edition</figcaption></figure>
+        <figure><img src="assets/img/precipice.jpg" alt="Precipice running on the Xbox" loading="lazy"><figcaption>Precipice, with its AI</figcaption></figure>
+        <figure><img src="assets/img/dogs-of-war.jpg" alt="Dogs of War running on the Xbox" loading="lazy"><figcaption>Dogs of War: 86 AI fighting at once</figcaption></figure>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p>Halo Map Porter is free and open source (MIT). It runs <a href="https://github.com/SnowyMouse/invader">Invader</a>,
+      the open-source Halo map compiler, which is a separate program.</p>
+    <p>A fan project, not affiliated with or endorsed by Microsoft, Xbox Game Studios, Bungie or 343 Industries. Halo is
+      a trademark of Microsoft.</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Halo Map Porter &amp; Halo 1 Unlimited</title>
+<meta name="description" content="Two fan projects for Halo: Combat Evolved: Halo Map Porter, which moves maps between MCC, Custom Edition and the original Xbox, and Halo 1 Unlimited, OpenCE on the original Xbox.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="mark" aria-hidden="true"></span>Halo CE on the Xbox</a>
+    <nav class="nav" aria-label="Pages">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="halo-map-porter.html">Halo Map Porter</a>
+      <a href="halo-1-unlimited.html">Halo 1 Unlimited</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <span class="eyebrow">Fan projects for Halo: Combat Evolved</span>
+    <h1>Bring any Halo CE map to the original Xbox, and give the Xbox version everything</h1>
+    <p class="lead">Two projects that work together. <strong>Halo Map Porter</strong> converts maps between MCC,
+      Custom Edition and the original Xbox. <strong>Halo 1 Unlimited</strong> rebuilds Xbox Halo on the community's
+      OpenCE code, so those maps can be played with 16 consoles, AI, downloads in the lobby and far more memory
+      than the retail game had.</p>
+    <figure class="hero-shot">
+      <img src="assets/img/lobby-three-consoles.jpg" width="1920" height="480"
+           alt="Three Xbox consoles in a system link lobby: the host sends a folder map to two consoles, each shown downloading at 27 percent, with a crown beside the host's name">
+    </figure>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="grid two">
+        <article class="card project-card">
+          <img src="assets/img/porter.png" alt="Halo Map Porter's window, on its Xbox tab" loading="lazy">
+          <div class="body">
+            <span class="tag live">Windows app · available</span>
+            <h2>Halo Map Porter</h2>
+            <p>Converts maps between the Master Chief Collection, Halo Custom Edition and the original Xbox, in any
+              direction. It handles the fixes and limits of each game for you: stock content swaps, Xbox models,
+              HUDs and sounds, and the Xbox's map size, tag memory and texture memory.</p>
+            <div class="btns">
+              <a class="btn primary" href="halo-map-porter.html">About the porter</a>
+              <a class="btn" href="https://github.com/AnthonyChester3D/halo-map-porter/releases">Download</a>
+            </div>
+          </div>
+        </article>
+        <article class="card project-card">
+          <img src="assets/img/bloodgulch.jpg" alt="Blood Gulch on Halo 1 Unlimited in xemu" loading="lazy">
+          <div class="body">
+            <span class="tag dev">Original Xbox · in development</span>
+            <h2>Halo 1 Unlimited</h2>
+            <p>Halo for the original Xbox, built from OpenCE, the community's decompilation of Halo: Combat Evolved (its rebuilt source code).
+              It feels like stock Xbox Halo, with modern netcode underneath. Up to 16 consoles can play, consoles
+              can join games in progress, AI is synced to everyone, maps download in the lobby, and the texture
+              cache is bigger than the retail game's.</p>
+            <div class="btns">
+              <a class="btn primary" href="halo-1-unlimited.html">About Halo 1 Unlimited</a>
+              <a class="btn" href="https://github.com/AnthonyChester3D/halo-1-unlimited">Source</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>How they fit together</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>1. Port a map</h3>
+          <p>Halo Map Porter converts a Custom Edition or MCC map for the Xbox, sized for the Xbox's memory. It
+            writes it as a map folder with its own picture, description and player counts.</p>
+        </div>
+        <div class="card">
+          <h3>2. Drop it in</h3>
+          <p>Copy the folder to <code>maps\</code> on the Xbox's hard drive. It shows up in the map browser, with
+            sorts, favourites and play counts.</p>
+        </div>
+        <div class="card">
+          <h3>3. Play it together</h3>
+          <p>Host it on system link, or over XLink Kai. Consoles that don't have the map download it from the
+            host in the lobby, even when they join a game already under way.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p>Fan projects, not affiliated with or endorsed by Microsoft, Xbox Game Studios, Bungie or 343 Industries.
+      Halo is a trademark of Microsoft. No game data is distributed here: you need your own copy of the game.</p>
+    <p>Halo 1 Unlimited builds on <a href="https://github.com/OpenCommunityEdition/OpenCE">OpenCE</a>. Halo Map Porter
+      uses <a href="https://github.com/SnowyMouse/invader">Invader</a>.</p>
+  </div>
+</footer>
+</body>
+</html>

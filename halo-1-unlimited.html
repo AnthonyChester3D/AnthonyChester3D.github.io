@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Halo 1 Unlimited</title>
+<meta name="description" content="Halo 1 Unlimited: Halo: Combat Evolved for the original Xbox, built from OpenCE. 16 consoles, join in progress, synced AI, map downloads in the lobby and a bigger texture cache.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="mark" aria-hidden="true"></span>Halo CE on the Xbox</a>
+    <nav class="nav" aria-label="Pages">
+      <a href="index.html">Home</a>
+      <a href="halo-map-porter.html">Halo Map Porter</a>
+      <a href="halo-1-unlimited.html" aria-current="page">Halo 1 Unlimited</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <span class="eyebrow">Original Xbox · in development</span>
+    <h1>Halo 1 Unlimited</h1>
+    <p class="lead">Everything players ever wanted from Xbox Halo, on the Xbox itself. Halo 1 Unlimited is built
+      from <a href="https://github.com/OpenCommunityEdition/OpenCE">OpenCE</a>, the community's decompilation of
+      Halo: Combat Evolved. It plays and feels like the stock Xbox game, with modern netcode, room for 16
+      consoles and far more memory for textures.</p>
+    <div class="btns">
+      <a class="btn primary" href="https://github.com/AnthonyChester3D/halo-1-unlimited">Source code</a>
+      <a class="btn" href="https://github.com/AnthonyChester3D/halo-1-unlimited/blob/halo1-unlimited/port/oxbox/README.md">How to build it</a>
+      <a class="btn" href="halo-map-porter.html">Make maps for it</a>
+    </div>
+    <figure class="hero-shot">
+      <img src="assets/img/two-consoles.jpg" width="1280" height="480"
+           alt="Two consoles in the same game on Gephyrophobia, a folder map the second console downloaded from the host in the lobby">
+    </figure>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <h2>What's in it today</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Netcode for 16 consoles</h3>
+          <p>OpenCE's distributed netcode replaces Halo's lockstep. Each console predicts its own player and the host
+            decides. Up to 16 consoles play together, on system link or over XLink Kai.</p>
+        </div>
+        <div class="card">
+          <h3>Join in progress</h3>
+          <p>Consoles can drop into a match that's already running, even on a map they don't have yet. They download
+            it first, then spawn.</p>
+        </div>
+        <div class="card">
+          <h3>AI everyone sees</h3>
+          <p>The host runs the AI and sends it to every console, so multiplayer maps built around AI play the same for
+            all players. Stock Custom Edition never synced AI.</p>
+        </div>
+        <div class="card">
+          <h3>Maps in the lobby</h3>
+          <p>Folder maps download from the host while you wait, over three connections. The host's name has a crown,
+            each console shows its progress, and the countdown waits for everyone.</p>
+        </div>
+        <div class="card">
+          <h3>Map browser</h3>
+          <p>Folder maps and packs on the hard drive, each with its own picture and description. You can sort them,
+            star favourites, hide maps you don't want and see how often each one is played.</p>
+        </div>
+        <div class="card">
+          <h3>More texture memory</h3>
+          <p>The texture cache borrows the part of Halo's 22 MB of tag memory that a map leaves empty. Blood Gulch gets
+            34.5 MB, where retail Halo has 22. A console upgraded to 128 MB gets up to 60 MB.</p>
+        </div>
+        <div class="card">
+          <h3>Stock feel</h3>
+          <p>It uses retail Halo's saves, profiles and gametypes, its menus and its look. The host gets an END GAME
+            option in the pause menu.</p>
+        </div>
+        <div class="card">
+          <h3>Logs that help</h3>
+          <p>Every console logs its BIOS and memory, map downloads, and any frame that took 100 ms or more. When it
+            runs from a disc or an ISO, the logs go to the game's save space instead.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Texture memory, map by map</h2>
+      <p>On a stock 64 MB Xbox, measured in xemu. Stock multiplayer maps hold 20 to 23 MB of textures in all, so on
+        most maps every texture now fits at once.</p>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Map</th><th>Texture cache</th><th>Borrowed from tag memory</th></tr></thead>
+          <tbody>
+            <tr><td>Retail Halo / Halo Universal</td><td class="num">22.0 MB</td><td class="num">none</td></tr>
+            <tr><td>Blood Gulch</td><td class="num">34.5 MB</td><td class="num">13.7 MB</td></tr>
+            <tr><td>Gephyrophobia</td><td class="num">32.7 MB</td><td class="num">11.9 MB</td></tr>
+            <tr><td>Death Island (port)</td><td class="num">30.3 MB</td><td class="num">9.5 MB</td></tr>
+            <tr><td>Hugeass (port)</td><td class="num">24.8 MB</td><td class="num">4.0 MB</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Screenshots</h2>
+      <div class="shots">
+        <figure><img src="assets/img/main-menu.jpg" alt="The main menu with the version label" loading="lazy"><figcaption>The stock menus</figcaption></figure>
+        <figure><img src="assets/img/map-browser.jpg" alt="The map browser listing stock maps and a folder map" loading="lazy"><figcaption>The map browser, with folder maps under "Your maps"</figcaption></figure>
+        <figure><img src="assets/img/bloodgulch.jpg" alt="Blood Gulch in a match" loading="lazy"><figcaption>Blood Gulch, every texture in memory</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap grid two">
+      <div>
+        <h2>Where it's going</h2>
+        <ul class="roadmap">
+          <li><span class="done">Done</span> 16 consoles, join in progress, synced AI, lobby downloads</li>
+          <li><span class="done">Done</span> Borrowed tag memory for textures, bigger caches on 128 MB consoles</li>
+          <li><span class="next">Next</span> A lobby screen that shows all 16 consoles</li>
+          <li><span class="next">Next</span> Smoother big AI battles, and memory sized for multiplayer AI</li>
+          <li><span class="next">Next</span> Per-BIOS fixes, chosen from what the console reports</li>
+          <li>Custom campaigns, and campaign conversion in Halo Map Porter</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Getting it</h2>
+        <p>Halo 1 Unlimited is in testing. The source is public and builds into an XBE from your own copy of Halo
+          (see <a href="https://github.com/AnthonyChester3D/halo-1-unlimited/blob/halo1-unlimited/port/oxbox/README.md">the build guide</a>).
+          Test builds are shared with the playtest group, and this page will link to downloads when they're ready.</p>
+        <p class="note">You need your own copy of Halo: Combat Evolved for the Xbox. No game data is distributed here.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p>Built on <a href="https://github.com/OpenCommunityEdition/OpenCE">OpenCE</a>, which ports the decompilation by
+      <a href="https://github.com/bnunu/halo-1">bnunu/halo-1</a>, a fork of <a href="https://github.com/punpckhdq/halo">punpckhdq/halo</a>.
+      Tested in <a href="https://xemu.app">xemu</a> and on real consoles.</p>
+    <p>A fan project, not affiliated with or endorsed by Microsoft, Xbox Game Studios, Bungie or 343 Industries. Halo is
+      a trademark of Microsoft.</p>
+  </div>
+</footer>
+</body>
+</html>
